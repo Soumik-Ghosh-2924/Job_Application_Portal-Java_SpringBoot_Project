@@ -18,23 +18,23 @@ This project is a Job Application Portal built using Java, Spring Boot, JSP, and
 
 # Technologies/Tech-Stack Used:
 
-# Backend: Java with Spring Boot  ![image](https://github.com/user-attachments/assets/0fd658e8-5925-4e3a-b594-0171bd3cac74)
+# Backend: Java with Spring Boot<br>  ![image](https://github.com/user-attachments/assets/0fd658e8-5925-4e3a-b594-0171bd3cac74)<br>
 
 
 
-# Frontend: JSP (JavaServer Pages) for dynamic content rendering  ![image](https://github.com/user-attachments/assets/a6cb4ffe-7e14-4a56-8a6f-a38775829778)
+# Frontend: JSP (JavaServer Pages) for dynamic content rendering<br>  ![image](https://github.com/user-attachments/assets/a6cb4ffe-7e14-4a56-8a6f-a38775829778)<br>
 
 
 
-# Build Tool: Maven for managing dependencies and project structure  ![image](https://github.com/user-attachments/assets/39c2c7b3-f987-47c7-8549-ce8e6ca4420a)
+# Build Tool: Maven for managing dependencies and project structure<br>  ![image](https://github.com/user-attachments/assets/39c2c7b3-f987-47c7-8549-ce8e6ca4420a)<br>
 
 
 
-# Architecture: MVC pattern for separating concerns and improving maintainability  ![image](https://github.com/user-attachments/assets/3e4ed6c8-b968-4625-b0b3-886b560dd5d3)
+# Architecture: MVC pattern for separating concerns and improving maintainability<br>  ![image](https://github.com/user-attachments/assets/3e4ed6c8-b968-4625-b0b3-886b560dd5d3)<br>
 
 
 
-# IDE: IntelliJ  ![image](https://github.com/user-attachments/assets/0f55c1cb-2add-4ca8-a9ac-f526086ace6a)
+# IDE: IntelliJ<br>  ![image](https://github.com/user-attachments/assets/0f55c1cb-2add-4ca8-a9ac-f526086ace6a)<br>
 
 
 
