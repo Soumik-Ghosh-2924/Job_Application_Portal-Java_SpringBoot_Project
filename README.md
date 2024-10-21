@@ -21,7 +21,9 @@ This project is a Job Application Portal built using Java, Spring Boot, JSP, and
 # Build Tool: Maven for managing dependencies and project structure
 # Architecture: MVC pattern for separating concerns and improving maintainability
 
-# Other Features:
+# Application Interface Demo : 
+![image](https://github.com/user-attachments/assets/f898e7b1-b970-4740-a0b4-71c7d64bef79)
+
 
 # Responsive UI: A clean and user-friendly interface built with JSP and CSS for an improved user experience.
 # Form Validation: Server-side validation for user inputs, ensuring data integrity. 
