@@ -34,8 +34,8 @@
 	
 		<nav class="navbar navbar-expand-lg navbar-light bg-warning">
 			<div class="container">
-				<a class="navbar-brand fs-1 fw-medium" href="#">Job
-					Portal Professionals</a>
+				<a class="navbar-brand fs-1 fw-medium" href="#" style="font-style: Times New Roman"><b>Job
+					Portal For IT Professionals</b></a>
 				<button class="navbar-toggler" type="button"
 					data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false"
@@ -44,10 +44,10 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link" href="home">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="viewalljobs">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="home"><b>Home</b></a></li>
+						<li class="nav-item"><a class="nav-link" href="viewalljobs"><b>About</b></a></li>
 						
-						<li class="nav-item"><a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/">Contact</a>
+						<li class="nav-item"><a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/"><b>Contact</b></a>
 						</li>
 					</ul>
 				</div>
@@ -57,10 +57,10 @@
 		<div class="container mt-5">
 			<div class="row justify-content-center">
 				<div class="col-md-6">
-					<div class="card">
+					<div class="card bg-warning">
 						<div class="card-body">
-							<h2 class="mb-3 text-center fs-3 font-weight-bold">Post a new
-								Job</h2>
+							<h2 class="mb-3 text-center fs-3 font-weight-bold"><b><i><u>Post a new
+								Job</u></i></b></h2>
 							<form:form action="handleForm" method="post" modelAttribute="jobPost">
 								<div class="mb-1">
 									<label for="postId" class="form-label">Post ID</label> <input

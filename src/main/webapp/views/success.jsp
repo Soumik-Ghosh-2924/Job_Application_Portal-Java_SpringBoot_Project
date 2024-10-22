@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-clr">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container">
         <a class="navbar-brand fs-1 fw-medium" href="#">Job Portal For IT Professionals</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -57,7 +57,7 @@
 
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card border-dark bg-dark text-white">
+            <div class="card border-dark bg-light text-dark">
                 <div class="card-body">
                     <h5 class="card-title">${jobPost.postProfile}</h5>
                     <p class="card-text">
@@ -82,7 +82,7 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <!-- Optional footer content -->
+                    CopyRight &copy; 2024 SG Dev-Comm.
                 </div>
             </div>
         </div>

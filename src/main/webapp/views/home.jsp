@@ -37,10 +37,10 @@ p {
 <body>
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-clr">
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
 		<div class="container">
-			<a class="navbar-brand fs-1 fw-medium " href="#">Job
-				Portal For IT Professionals </a>
+			<a class="navbar-brand fs-1 fw-medium " href="#"><b>Job
+				Portal For IT Professionals</b> </a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -49,12 +49,12 @@ p {
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item"><a class="nav-link" href="home">Home</a>
+					<li class="nav-item"><a class="nav-link" href="home"><b>Home</b></a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="viewalljobs">Jobs</a></li>
+					<li class="nav-item"><a class="nav-link" href="viewalljobs"><b>Jobs</b></a></li>
 
 					<li class="nav-item"><a class="nav-link"
-						href="https://github.com/Soumik-Ghosh-2924/">Contact</a></li>
+						href="https://github.com/Soumik-Ghosh-2924/"><b>Contact</b></a></li>
 				</ul>
 			</div>
 		</div>
@@ -66,10 +66,10 @@ p {
 			<div class="col-md-6 mb-5">
 				<div class="card bg-warning">
 					<div class="card-body text-center">
-						<h5 class="card-title">All Job Listings </h5>
+						<h5 class="card-title"><b>All Job Listings </b></h5>
 						<form action="/viewalljobs" method="get">
 							<!-- Add your form fields here -->
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn btn-primary">Check</button>
 						</form>
 					</div>
 				</div>
@@ -79,11 +79,11 @@ p {
 			<div class="col-md-6 mb-5">
 				<div class="card bg-warning">
 					<div class="card-body text-center">
-						<h5 class="card-title">Add New Job Profile </h5>
+						<h5 class="card-title"><b>Add New Job Profile</b></h5>
 						<form action="/addjob" method="get">
 							<!-- Your form fields go here if needed -->
 
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn btn-primary">Add</button>
 						</form>
 
 					</div>
