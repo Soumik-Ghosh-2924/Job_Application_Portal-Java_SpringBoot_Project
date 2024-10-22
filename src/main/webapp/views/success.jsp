@@ -39,13 +39,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home">Home</a>
+                    <a class="nav-link" href="home"><b>Home</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="viewalljobs">All Jobs</a>
+                    <a class="nav-link" href="viewalljobs"><b>All Jobs</b></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/">Contact</a>
+                    <a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/"><b>Contact</b></a>
                 </li>
             </ul>
         </div>
@@ -53,7 +53,7 @@
 </nav>
 
 <div class="container mt-5">
-    <h2 class="mb-4 text-center font-weight-bold">Job Post Details</h2>
+    <h2 class="mb-4 text-center font-weight-bold"><b><u>Job Post Details</u></b></h2>
 
     <div class="row justify-content-center">
         <div class="col-md-6">
