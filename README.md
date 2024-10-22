@@ -7,13 +7,14 @@ This project is a Job Application Portal built using Java, Spring Boot, JSP, and
 # User Perspective :-
 
 # Employer: Post job vacancies
-# Job Seeker: Search for jobs
+# Job Seeker: Look for jobs and Apply to them.
 
 
 # Core Functionalities:
 
 # Job Posting and Management: Employers can post job listings, specifying the job title, description, requirements, and location.
 # Job Search: Job seekers can search jobs based on their requirement and respective skill-set.
+# Job Application : Apply to desired jobs by filling in a respective form.
 
 
 # Technologies/Tech-Stack Used:
@@ -54,6 +55,11 @@ This project is a Job Application Portal built using Java, Spring Boot, JSP, and
 # Available Job Vacancies : 
 
 ![image](https://github.com/user-attachments/assets/35e9ae4d-624c-4cc7-958c-40706d487006)
+
+# Job Application Form :
+
+![image](https://github.com/user-attachments/assets/e71e02c4-f883-4cc8-aa7a-215b1ef10615)
+
 
 
 
