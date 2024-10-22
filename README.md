@@ -47,7 +47,7 @@ This project is a Job Application Portal built using Java, Spring Boot, JSP, and
 
 ![image](https://github.com/user-attachments/assets/f898e7b1-b970-4740-a0b4-71c7d64bef79)
 
-# New Posting Form For Employer :
+# New Job Posting Form For Employer :
 
 ![image](https://github.com/user-attachments/assets/7bfa3ccd-7656-4d09-8898-58993576efee)
 
