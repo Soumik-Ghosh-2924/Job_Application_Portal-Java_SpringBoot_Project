@@ -3,12 +3,11 @@ package com.example.JobApp.controller;
 import java.util.List;
 
 
+import com.example.JobApp.JobApplicationForm.ApplicationForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.JobApp.model.JobPost;
 import com.example.JobApp.service.JobService;
@@ -54,7 +53,22 @@ public class JobController {
 		  return "success";
 		
 	}
-	
+
+
+	@GetMapping("/applyJob")
+	public String showApplicationForm(@RequestParam("postId") Long postId, Model model)
+	{
+		model.addAttribute("postId", postId);
+		model.addAttribute("applicationForm", new ApplicationForm());
+		return "applyJob";
+	}
+
+	@PostMapping("/submitApplication")
+	public String submitApplication(@ModelAttribute("applicationForm") ApplicationForm applicationForm, Model model)
+	{
+		model.addAttribute("message", "Your candidature has been applied for the post. Further notice will be sent via email. Thank You.");
+		return "applicationSuccess";
+	}
 
 
 	

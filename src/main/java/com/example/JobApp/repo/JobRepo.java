@@ -11,7 +11,7 @@ import com.example.JobApp.model.JobPost;
 @Repository
 public class JobRepo {
 
-	// arrayList to store store JobPost objects
+	// arrayList to store JobPost objects
 	List<JobPost> jobs = new ArrayList<>();
 
 	// ****************************************************************************
@@ -38,8 +38,7 @@ public class JobRepo {
 				List.of("Networking", "Cisco", "Routing", "Switching")));
 
 		// Mobile App Developer Job Post
-		jobs
-				.add(new JobPost(5, "Mobile App Developer", "Experience in mobile app development for iOS and Android",
+		jobs.add(new JobPost(5, "Mobile App Developer", "Experience in mobile app development for iOS and Android",
 						3, List.of("iOS Development", "Android Development", "Mobile App")));
 
 		// DevOps Engineer Job Post
@@ -48,13 +47,11 @@ public class JobRepo {
 						4, List.of("DevOps", "CI/CD", "Docker", "Kubernetes")));
 
 		// UI/UX Designer Job Post
-		jobs
-				.add(new JobPost(7, "UI/UX Designer", "Create engaging user experiences and intuitive user interfaces",
+		jobs.add(new JobPost(7, "UI/UX Designer", "Create engaging user experiences and intuitive user interfaces",
 						2, List.of("User Experience", "User Interface Design", "Prototyping")));
 
 		// Cybersecurity Analyst Job Post
-		jobs
-				.add(new JobPost(8, "Cybersecurity Analyst", "Protect computer systems and networks from cyber threats",
+		jobs.add(new JobPost(8, "Cybersecurity Analyst", "Protect computer systems and networks from cyber threats",
 						4, List.of("Cybersecurity", "Network Security", "Incident Response")));
 
 		// Full Stack Developer Job Post
@@ -98,8 +95,7 @@ public class JobRepo {
 				List.of("User Research", "Usability Testing", "Human-Computer Interaction")));
 
 		// Job Post 18
-		jobs
-				.add(new JobPost(18, "Backend Developer", "Build server-side logic and databases for web applications",
+		jobs.add(new JobPost(18, "Backend Developer", "Build server-side logic and databases for web applications",
 						4, List.of("Java", "Spring", "Node.js", "MongoDB")));
 
 		// Job Post 19
@@ -107,8 +103,7 @@ public class JobRepo {
 				List.of("Game Development", "Unity", "C#", "3D Modeling")));
 
 		// Job Post 20
-		jobs
-				.add(new JobPost(20, "IT Project Manager", "Lead and manage IT projects from initiation to completion",
+		jobs.add(new JobPost(20, "IT Project Manager", "Lead and manage IT projects from initiation to completion",
 						6, List.of("Project Management", "Agile", "Scrum", "Risk Management")));
 
 	}

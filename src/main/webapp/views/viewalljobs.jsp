@@ -26,9 +26,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="viewalljobs">All Jobs</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="home"><b>Home</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="viewalljobs"><b>All Jobs</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/"><b>Contact</b></a></li>
             </ul>
         </div>
     </div>
@@ -37,12 +37,12 @@
 <ab:set var="jobPosts" value="${jobPosts}" />
 
 <div class="container mt-5">
-    <h2 class="mb-4 text-center font-weight-bold">Job Post List</h2>
+    <h2 class="mb-4 text-center font-weight-bold"><i><b><u>Job Vacancies</u></b></i></h2>
 
     <div class="row row-cols-2">
         <ab:forEach var="jobPost" items="${jobPosts}">
             <div class="col mb-4">
-                <div class="card border-dark bg-dark text-white">
+                <div class="card border-dark text-black" style="border-width: 5px;">
                     <div class="card-body">
                         <h5 class="card-title">${jobPost.postProfile}</h5>
                          <p class="card-text">
@@ -65,15 +65,18 @@
                                 </ab:forEach>
                             </ul>
                         </p>
+                        <a href="applyJob?postId=${jobPost.postId}" class="btn btn-primary"> Apply </a>
                     </div>
                     <div class="card-footer">
-                        <!-- Optional footer content -->
+                        CopyRight &copy; 2024 SG Dev-Comm.
                     </div>
                 </div>
             </div>
         </ab:forEach>
     </div>
 </div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

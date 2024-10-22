@@ -77,7 +77,7 @@ p {
 
 			<!-- Card 2 -->
 			<div class="col-md-6 mb-5">
-				<div class="card">
+				<div class="card bg-warning">
 					<div class="card-body text-center">
 						<h5 class="card-title">Add New Job Profile </h5>
 						<form action="/addjob" method="get">
