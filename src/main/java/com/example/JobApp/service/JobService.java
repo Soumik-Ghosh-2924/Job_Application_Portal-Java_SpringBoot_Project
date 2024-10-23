@@ -12,25 +12,14 @@ import com.example.JobApp.repo.JobRepo;
 public class JobService {
 	@Autowired
 	public JobRepo repo;
-	
-	
-	
+
 	//method to return all JobPosts
 	public List<JobPost> returnAllJobPosts() {
 		return repo.returnAllJobPosts();
 
 		
 	}
-	
-	
-	
-	
-
 	// ***************************************************************************
-
-
-	
-	
 	
 	// method to add a jobPost
 	public void addJobPost(JobPost jobPost) {

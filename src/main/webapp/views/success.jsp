@@ -15,23 +15,75 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
     <style>
-        .card {
-            border: 2px solid #343a40; /* Dark border color */
-            background-color: #f8f9fa; /* Light background color */
-            margin-bottom: 20px;
+        body {
+            background-color: #f1f3f5;
         }
-        
-        .bg-clr{
-        background-color:#+ffffff;
+        .navbar {
+            background-color: #ffc107; /* Bright yellow background for navbar */
+            padding: 15px;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .container {
+            margin-top: 40px;
+        }
+        h2 {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: 2px solid #343a40;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #495057;
+        }
+        .card-text {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            font-size: 1rem;
+        }
+        .card-footer {
+            text-align: center;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px;
+            border-top: 2px solid #343a40;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .btn-primary {
+            background-color: #343a40;
+            border-color: #343a40;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-        <a class="navbar-brand fs-1 fw-medium" href="#">Job Portal For IT Professionals</a>
+        <a class="navbar-brand" href="#">Job Portal For IT Professionals</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,38 +91,35 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home"><b>Home</b></a>
+                    <a class="nav-link" href="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="viewalljobs"><b>All Jobs</b></a>
+                    <a class="nav-link" href="viewalljobs">All Jobs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/"><b>Contact</b></a>
+                    <a class="nav-link" href="https://github.com/Soumik-Ghosh-2924/">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="container mt-5">
-    <h2 class="mb-4 text-center font-weight-bold"><b><u>Job Post Details</u></b></h2>
+<div class="container">
+    <h2 class="text-center"><u>Job Post Details</u></h2>
 
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card border-dark bg-light text-dark">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${jobPost.postProfile}</h5>
                     <p class="card-text">
-                        <strong>Job-Id:</strong>
-                        ${jobPost.postId}
+                        <strong>Job-Id:</strong> ${jobPost.postId}
                     </p>
                     <p class="card-text">
-                        <strong>Description:</strong>
-                        ${jobPost.postDesc}
+                        <strong>Description:</strong> ${jobPost.postDesc}
                     </p>
                     <p class="card-text">
-                        <strong>Experience Required:</strong>
-                        ${jobPost.reqExperience} years
+                        <strong>Experience Required:</strong> ${jobPost.reqExperience} years
                     </p>
                     <p class="card-text">
                         <strong>Tech Stack Required:</strong>

@@ -1,78 +1,61 @@
-/* Body styling */
-body {
-    background-color: #f3907b; /* Bootstrap primary blue */
-    color: #fff;
-    font-family: 'Times New Roman', sans-serif; /* Font style for a clean, modern look */
-    line-height: 1.6;
+
+/* Global Styles */
+
+html, body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    color: #333;
+    background-color:#a592bc
 }
 
-/* Navbar styling */
-.navbar-nav .nav-link {
-    font-size: 18px;
-    transition: color 0.3s ease;
-    padding: 10px 15px;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #2c3e50;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #ffeb3b;
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
     text-decoration: underline;
 }
 
-/* Container styling */
-.container {
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-/* Card class styling */
-.cdClass {
-    background-color: #f7f711;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Card hover effect */
-.cdClass:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Button styling */
-.btn {
-    border-radius: 30px;
+button, .btn {
+    background-color: #3498db;
+    border: none;
     padding: 10px 20px;
-    background-color: #ffeb3b;
-    color: #000;
+    color: #fff;
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #ffc107;
-    transform: scale(1.05);
+button:hover, .btn:hover {
+    background-color: #2980b9;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-@media (max-width: 768px) {
-    .container {
-        margin-top: 20px;
-        padding: 15px;
-    }
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
 
-    .navbar-nav .nav-link {
-        font-size: 16px;
-    }
-
-    .cdClass {
-        padding: 10px;
-    }
+.mt-5 {
+    margin-top: 3rem;
 }
