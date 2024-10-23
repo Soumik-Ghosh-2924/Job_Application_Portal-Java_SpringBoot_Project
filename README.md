@@ -46,19 +46,23 @@ This project is a Job Application Portal built using Java, Spring Boot, JSP, and
 
 # Opening UI :
 
-![image](https://github.com/user-attachments/assets/f898e7b1-b970-4740-a0b4-71c7d64bef79)
+![image](https://github.com/user-attachments/assets/6c0d7e1c-93ed-4eab-a44b-45362bb50dbb)
+
 
 # New Job Posting Form For Employer :
 
-![image](https://github.com/user-attachments/assets/7bfa3ccd-7656-4d09-8898-58993576efee)
+![image](https://github.com/user-attachments/assets/e76abd11-312d-48be-9d1c-411c4c39284e)
+
 
 # Available Job Vacancies : 
 
-![image](https://github.com/user-attachments/assets/35e9ae4d-624c-4cc7-958c-40706d487006)
+![image](https://github.com/user-attachments/assets/dd1cb466-2166-4f80-8dd7-4df29f2d2dab)
+
 
 # Job Application Form :
 
-![image](https://github.com/user-attachments/assets/e71e02c4-f883-4cc8-aa7a-215b1ef10615)
+![image](https://github.com/user-attachments/assets/dcc47a44-18b8-403d-9b42-44828717276c)
+
 
 
 
