@@ -1,0 +1,10 @@
+1. Help Tab in the navigation Bar.
+2. Job portal for IT Professionals - Tag on each page
+3. Go Back to home page - Button in the final form successful submission page.
+4. Picture in the home page.
+5. Introduction about the site to be mentioned in the home page.
+6. Email Response to be sent back after submission to the respective users.
+7. User Login - Option in the Navigation Bar .
+    -> Only when the user tries to apply for a job post he has to first login
+        to the portal then only he can apply for the job post.
+   
