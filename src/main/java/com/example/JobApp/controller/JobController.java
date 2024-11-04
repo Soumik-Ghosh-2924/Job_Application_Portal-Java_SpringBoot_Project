@@ -18,6 +18,12 @@ public class JobController {
 	@Autowired
 	private JobService service;
 
+
+	public JobController(JobService service)
+	{
+		this.service=service;
+	}
+
 	// ************************************************************************
 
 	@RequestMapping({"/","/home"})
@@ -44,7 +50,7 @@ public class JobController {
 	}
 	
 	// ************************************************************************
-
+	//controller to handle the job application form
 	@PostMapping("/handleForm")
 	public String handleAddJobForm(JobPost jobPost,Model model) {
 		model.addAttribute("jobPost", jobPost);
@@ -55,6 +61,9 @@ public class JobController {
 	}
 
 
+
+	//*************************************************************************
+	//controller to apply for the job post
 	@GetMapping("/applyJob")
 	public String showApplicationForm(@RequestParam("postId") Long postId, Model model)
 	{
@@ -63,6 +72,11 @@ public class JobController {
 		return "applyJob";
 	}
 
+
+
+
+	//***************************************************************************
+	//Controller to submit the job application
 	@PostMapping("/submitApplication")
 	public String submitApplication(@ModelAttribute("applicationForm") ApplicationForm applicationForm, Model model)
 	{
@@ -71,14 +85,14 @@ public class JobController {
 	}
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	//***************************************************************************
+	//Finding the job related to the keyword search
+	@GetMapping("/jobs/search")
+	public String searchJobs(@RequestParam("keyword") String keyword, Model model )
+	{
+		List<JobPost> jobs = service.searchJobs(keyword);
+		model.addAttribute("jobs", service.searchJobs(keyword)	);
+		model.addAttribute("keyword", keyword);
+		return "searchJobs";
+	}
 }

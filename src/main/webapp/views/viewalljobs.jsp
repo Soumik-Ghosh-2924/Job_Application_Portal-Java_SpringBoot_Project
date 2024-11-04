@@ -86,6 +86,13 @@
     </div>
 </nav>
 
+<form action="/jobs/search" method="get">
+    <input type="text" name="keyword" placeholder="Search jobs..." value="${keyword}" />
+    <button type="submit">Search</button>
+</form>
+
+
+
 <ab:set var="jobPosts" value="${jobPosts}" />
 
 <div class="container">
@@ -124,6 +131,7 @@
         </ab:forEach>
     </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
