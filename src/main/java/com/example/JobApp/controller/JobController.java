@@ -87,12 +87,12 @@ public class JobController {
 
 	//***************************************************************************
 	//Finding the job related to the keyword search
-	@GetMapping("/jobs/search")
-	public String searchJobs(@RequestParam("keyword") String keyword, Model model )
-	{
-		List<JobPost> jobs = service.searchJobs(keyword);
-		model.addAttribute("jobs", service.searchJobs(keyword)	);
-		model.addAttribute("keyword", keyword);
-		return "searchJobs";
-	}
+//	@GetMapping("/jobs/search")
+//	public String searchJobs(@RequestParam("keyword") String keyword, Model model )
+//	{
+//		List<JobPost> jobs = service.searchJobs(keyword);
+//		model.addAttribute("jobs", service.searchJobs(keyword)	);
+//		model.addAttribute("keyword", keyword);
+//		return "searchJobs";
+//	}
 }

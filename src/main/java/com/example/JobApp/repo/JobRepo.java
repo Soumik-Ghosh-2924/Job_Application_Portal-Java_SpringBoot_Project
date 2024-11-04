@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+import com.example.JobApp.DataBaseConnection;
 import org.springframework.stereotype.Repository;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,40 +27,40 @@ public class JobRepo
 
 	public JobRepo(Connection connection)
 	{
-		this.connection=connection;
+		this.connection= DataBaseConnection.getConnection();
 	}
 
-	public List<JobPost> searchJobsByKeyword(String keyword) {
-		List<JobPost> req_jobs = new ArrayList<>();
-
-		// SQL query to search by postProfile or postDesc
-		String query = "SELECT * FROM jobs WHERE LOWER(postProfile) LIKE ? OR LOWER(postDesc) LIKE ?";
-
-		try (PreparedStatement statement = connection.prepareStatement(query)) {
-			// Format keyword for partial matching in LIKE clause
-			String keywordPattern = "%" + keyword.toLowerCase() + "%";
-			statement.setString(1, keywordPattern);
-			statement.setString(2, keywordPattern);
-
-			ResultSet rs = statement.executeQuery();
-			while (rs.next()) {
-				JobPost job = new JobPost();
-				job.setPostId(rs.getInt("id")); // Assuming `id` is the column name in the table
-				job.setPostProfile(rs.getString("postProfile"));
-				job.setPostDesc(rs.getString("postDesc"));
-
-				// Map other fields as needed (e.g., reqExperience, postTechStack)
-				job.setReqExperience(rs.getInt("reqExperience"));
-
-				// Add the job post to the result list
-				req_jobs.add(job);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		return req_jobs;
-	}
+//	public List<JobPost> searchJobsByKeyword(String keyword) {
+//		List<JobPost> req_jobs = new ArrayList<>();
+//
+//		// SQL query to search by postProfile or postDesc
+//		String query = "SELECT * FROM jobs WHERE LOWER(postProfile) LIKE ? OR LOWER(postDesc) LIKE ?";
+//
+//		try (PreparedStatement statement = connection.prepareStatement(query)) {
+//			// Format keyword for partial matching in LIKE clause
+//			String keywordPattern = "%" + keyword.toLowerCase() + "%";
+//			statement.setString(1, keywordPattern);
+//			statement.setString(2, keywordPattern);
+//
+//			ResultSet rs = statement.executeQuery();
+//			while (rs.next()) {
+//				JobPost job = new JobPost();
+//				job.setPostId(rs.getInt("id")); // Assuming `id` is the column name in the table
+//				job.setPostProfile(rs.getString("postProfile"));
+//				job.setPostDesc(rs.getString("postDesc"));
+//
+//				// Map other fields as needed (e.g., reqExperience, postTechStack)
+//				job.setReqExperience(rs.getInt("reqExperience"));
+//
+//				// Add the job post to the result list
+//				req_jobs.add(job);
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
+//		return req_jobs;
+//	}
 
 
 

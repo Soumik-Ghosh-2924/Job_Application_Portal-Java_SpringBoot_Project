@@ -38,11 +38,11 @@ public class JobService {
 
 
 
-	//Method to search job as per a keyword
-	//*****************************************************************************
-	public List<JobPost> searchJobs(String keyword){
-		return repo.searchJobsByKeyword(keyword);
-	}
+//	//Method to search job as per a keyword
+//	//*****************************************************************************
+//	public List<JobPost> searchJobs(String keyword){
+//		return repo.searchJobsByKeyword(keyword);
+//	}
 
 
 }
